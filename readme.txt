@@ -38,11 +38,20 @@ Available commands are:
 .list             Show numbered list of cards.
 .del              Delete the last card in the deck.
 .ruler            Display column numbers.
+.telnet [address][port]   Telnet to supplied address/port.
 
 Typing .submit opens a network connection. You will be presented with
 an IP address that you must change in one of the #defines at the files 
 beginning. You can hit <enter> to use this address or type in a new
 IPv4 address.
+
+If you type in a new address, that address will be used as the default
+until the program is exited. The original default will be used the next
+time the program is started.
+
+This IP address is NOT used in the telnet application. You must type
+it in (along with the port) at each invocation.
+
 
 
 
